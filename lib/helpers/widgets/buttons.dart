@@ -18,7 +18,7 @@ class Button extends StatelessWidget {
     this.borderRadius = 8.0,
     this.disabled = false,
     this.isActive = false,
-    this.fontSize = 15.0,
+    this.fontSize = 16.0,
     this.elevation = 0.0,
     this.padding = const EdgeInsets.symmetric(horizontal: 16.0),
   });

@@ -5,6 +5,7 @@ import 'package:qis_quiz/features/onboarding/pages/onboarding2_page.dart';
 import 'package:qis_quiz/features/onboarding/pages/onboarding3_page.dart';
 import 'package:qis_quiz/features/onboarding/pages/onboarding4_page.dart';
 import 'package:qis_quiz/features/onboarding/pages/onboarding5_page.dart';
+import 'package:qis_quiz/features/waiting_room/pages/waiting_room_page.dart';
 import 'package:qis_quiz/routers/router_name.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 import 'package:go_router/go_router.dart';
@@ -26,6 +27,11 @@ Raw<GoRouter> router(RouterRef ref) {
         path: '/enter-name',
         name: RouteName.enterName,
         builder: (context, state) => const EnterNamePage(),
+      ),
+      GoRoute(
+        path: '/waiting-room',
+        name: RouteName.waitingRoom,
+        builder: (context, state) => const WaitingRoomPage(),
       ),
       GoRoute(
         path: '/onboarding1',
